@@ -195,3 +195,126 @@
 //                alert("ADIVINASTE ✅🎊🎉🎇🎈");
 //           }
 // }
+
+// Solución 2
+// let numeroIngresado1 = prompt("Adivine el número entre 1 y 10(Intento 1)")
+// if(numeroIngresado1 < 7){
+//      alert("El numero incógnito es mayor ❌");
+// }else if(numeroIngresado1 > 7){
+//      alert("El numero incógnito es menor ❌");
+// }else if(numeroIngresado1 == 7){
+//      alert("ADIVINASTE ✅🎊🎉🎇🎈");
+// }else{
+//      alert("El dato ingresado no es correcto ❌");
+// }
+// let numeroIngresado2 = prompt("Adivine el número entre 1 y 10(Intento 2)")
+// if(numeroIngresado2 < 7){
+//      alert("El numero incógnito es mayor ❌");
+// }else if(numeroIngresado2 > 7){
+//      alert("El numero incógnito es menor ❌");
+// }else if(numeroIngresado2 == 7){
+//      alert("ADIVINASTE ✅🎊🎉🎇🎈");
+// }else{
+//      alert("El dato ingresado no es correcto ❌");
+// }
+// let numeroIngresado3 = prompt("Adivine el número entre 1 y 10(Intento 3)")
+// if(numeroIngresado3 < 7){
+//      alert("El numero incógnito es mayor ❌");
+// }else if(numeroIngresado3 > 7){
+//      alert("El numero incógnito es menor ❌");
+// }else if(numeroIngresado3 == 7){
+//      alert("ADIVINASTE ✅🎊🎉🎇🎈");
+// }else{
+//      alert("El dato ingresado no es correcto ❌");
+// }
+
+//Ejercicio N°9
+// ----------------------------------------------------------------------------
+
+// let edadIngresada = prompt("Ingrese su EDAD")
+
+// switch(edadIngresada){
+// case edadIngresada:
+//      if(edadIngresada > 0 && edadIngresada <= 12){
+//           alert("Eres un Infante");
+//      }
+// case edadIngresada:
+//      if(edadIngresada > 12 && edadIngresada <=18){
+//           alert("Eres un adolescente");
+//      }
+// case edadIngresada:
+//      if(edadIngresada > 18 && edadIngresada <= 45 ){
+//           alert("Eres un adulto");
+//      }
+// case edadIngresada:
+//      if(edadIngresada > 45 && edadIngresada < 100){
+//           alert("Eres un anciano");
+//      }     
+// case edadIngresada:
+//      if(edadIngresada >= 100){
+//           alert("¿Seguro tienes esa edad?");
+//      }  
+// }
+
+//Ejercicio N°10
+// ----------------------------------------------------------------------------
+
+// Solución 1
+// let eleccionPersonajeX = prompt("Pierda/Papel/Tijera")
+// let eleccionPersonajeY = prompt("Pierda/Papel/Tijera")
+
+// switch(eleccionPersonajeX){
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Piedra" && eleccionPersonajeY == "Tijera")
+//           alert("Gana personaje1");
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Piedra" && eleccionPersonajeY == "Papel")
+//           alert("Gana personaje2");
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Piedra" && eleccionPersonajeY == "Piedra")
+//           alert("Empate");
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Tijera" && eleccionPersonajeY == "Papel")
+//           alert("Gana personaje1");
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Tijera" && eleccionPersonajeY == "Piedra")
+//           alert("Gana personaje2");
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Tijera" && eleccionPersonajeY == "Tijera")
+//           alert("Empate");
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Papel" && eleccionPersonajeY == "Piedra")
+//           alert("Gana personaje1");
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Papel" && eleccionPersonajeY == "Tijera")
+//           alert("Gana personaje2");
+//      case eleccionPersonajeX:
+//           if(eleccionPersonajeX == "Papel" && eleccionPersonajeY == "Papel")
+//           alert("Empate");
+// }
+
+
+// Solución 2
+// let eleccionPersonajeX = prompt("PERSONAJE 1 escoje: Pierda/Papel/Tijera")
+// let eleccionPersonajeY = prompt("PERSONAJE 2 escoje: Pierda/Papel/Tijera")
+
+// switch(eleccionPersonajeX){
+//      case eleccionPersonajeX:
+//           if((eleccionPersonajeX == "Piedra" && eleccionPersonajeY == "Tijera") 
+//           || (eleccionPersonajeX == "Tijera" && eleccionPersonajeY == "Papel") 
+//           || (eleccionPersonajeX == "Papel" && eleccionPersonajeY == "Piedra"))
+//           alert("Gana PERSONAJE 1");
+//      case eleccionPersonajeX:
+//           if((eleccionPersonajeX == "Piedra" && eleccionPersonajeY == "Papel") 
+//           || (eleccionPersonajeX == "Tijera" && eleccionPersonajeY == "Piedra") 
+//           || (eleccionPersonajeX == "Papel" && eleccionPersonajeY == "Tijera"))
+//           alert("Gana PERSONAJE 2");
+//      case eleccionPersonajeX:
+//           if((eleccionPersonajeX == "Piedra" && eleccionPersonajeY == "Piedra") 
+//           || (eleccionPersonajeX == "Tijera" && eleccionPersonajeY == "Tijera") 
+//           || (eleccionPersonajeX == "Papel" && eleccionPersonajeY == "Papel"))
+//           alert("Empate");
+// }
+
+//Ejercicio N°11
+// ----------------------------------------------------------------------------
