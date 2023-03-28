@@ -98,5 +98,100 @@
 //      console.log("Su turno será la semana que viene");
 // }
 
-//Ejercicio N°6
+//Ejercicio N°7
 // ----------------------------------------------------------------------------
+
+//Solución 1
+// let nombre = prompt("Ingrese su Nombre")
+// let pase = prompt("Posee ud pase? (VIP/Normal)")
+// let entrada = prompt("¿Posee ud entrada? (s/n)")
+
+// if(nombre == "Fede" || pase == "VIP"){
+//      console.log(`Bienvenido ${nombre} Ud tiene ingreso libre!`);
+// }else if(entrada == "s"){
+//      let usarEntrada = prompt("¿Quiere usar la entrada s/n?")
+//      if(usarEntrada == "s"){
+//           alert(`Bienvenido ${nombre}`)
+//      }else{
+//           alert(`Hasta luego ${nombre} te esperamos pronto`)
+//      }
+// }else{
+//      let comprarEntrada = prompt("¿Desea comprar una entrada s/n?")
+//      if(comprarEntrada == "s"){
+//           let dineroDisponible = prompt("Ingrese el monto a pagar (min. $1000)")
+//           if(dineroDisponible < 1000){
+//                alert("El monto es insuficiente, intente nuevamente")
+//           }else{
+//                alert(`Bienvenido ${nombre}`)
+//           }
+//      }else{
+//           alert(`Hasta luego ${nombre} te esperamos pronto`)
+//      }
+// }
+
+// Solución 2
+// let nombre = prompt("Ingrese su Nombre")
+// if(nombre == "Fede"){
+//      alert(`Bienvenido ${nombre} Ud tiene ingreso libre!`);
+// }else{
+//      let pase = prompt("Posee ud pase? (VIP/Normal)")
+//      if(pase == "VIP"){
+//           alert(`Bienvenido ${nombre} Ud tiene ingreso libre!`);
+//      }else{
+//           let entrada = prompt("¿Posee ud entrada? (s/n)")
+//           if(entrada == "s"){
+//                let usarEntrada = prompt("¿Quiere usar la entrada s/n?")
+//                if(usarEntrada == "s"){
+//                     alert(`Le damos la bienvenida ${nombre}!`)
+//                }else{
+//                     alert(`Hasta luego ${nombre} te esperamos pronto`)
+//                }
+//           }else{
+//                let dineroDisponible = prompt("Para comprar la entrada ingrese el monto a pagar (min. $1000)")
+//                if(dineroDisponible < 1000){
+//                     alert("El monto es insuficiente, intente nuevamente")
+//                }else{
+//                     alert(`Su compra se realizó con éxito ${nombre}, bienvenido!`)
+//                }
+//           }
+//      }
+// }
+
+//Ejercicio N°8
+// ----------------------------------------------------------------------------
+
+// Solucion 1
+// let numeroIngresado = prompt("Adivine el número (Intento 1)")
+// let numeroIncognita = 7
+// switch (numeroIngresado){
+//      case numeroIngresado:
+//           if(numeroIngresado < 7){
+//                alert("El numero incógnito es mayor ❌");
+//           }else if(numeroIngresado > 7){
+//                alert("El numero incógnito es menor ❌");
+//           }else{
+//                alert("ADIVINASTE ✅🎊🎉🎇🎈");
+//           }
+// }
+// let numeroIngresado2 = prompt("Adivine el número (Intento 2)")
+// switch (numeroIngresado2){
+//      case numeroIngresado2:
+//           if(numeroIngresado2 < 7){
+//                alert("El numero incógnito es mayor ❌");
+//           }else if(numeroIngresado2 > 7){
+//                alert("El numero incógnito es menor ❌");
+//           }else{
+//                alert("ADIVINASTE ✅🎊🎉🎇🎈");
+//           }
+// }
+// let numeroIngresado3 = prompt("Adivine el número (Intento 3)")
+// switch (numeroIngresado3){
+//      case numeroIngresado3:
+//           if(numeroIngresado3 < 7){
+//                alert("El numero incógnito es mayor ❌");
+//           }else if(numeroIngresado3 > 7){
+//                alert("El numero incógnito es menor ❌");
+//           }else{
+//                alert("ADIVINASTE ✅🎊🎉🎇🎈");
+//           }
+// }
