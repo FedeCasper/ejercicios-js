@@ -381,3 +381,21 @@
 
 //Ejercicio N°13
 // ----------------------------------------------------------------------------
+
+// let datos = {}
+
+// datos.nombre = prompt("Nombre")
+// datos.apellido = prompt("Apellido")
+// datos.direccion = prompt("Domicilio")
+// datos.genero = prompt("Sexo")
+// datos.dni = prompt("DNI")
+
+// let respuesta = prompt(`Nombre: ${datos.nombre}\nApellido: ${datos.apellido}\nDirección: ${datos.direccion}\nGénero: ${datos.genero}\nDNI: ${datos.dni}\nlos datos son correctos? (s/n)`);
+
+// if(respuesta == "s"){
+//      console.table(datos);
+//      alert("Registro Exitoso!");
+// }else if(respuesta == "n"){
+//      alert("Vuelva a intentarlo en 1 mes");
+// }
+
