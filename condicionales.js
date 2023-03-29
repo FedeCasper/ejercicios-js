@@ -318,3 +318,66 @@
 
 //Ejercicio N°11
 // ----------------------------------------------------------------------------
+
+// let color = prompt("Elija un color (Verde | Blanco Negro | Azul | Amarillo | Rojo | Marrón")
+
+// switch (color){
+//      case color:
+//           if(color == "Blanco"){
+//                alert("Falta de color")
+//           }else if(color == "Negro"){
+//                alert("Falta de color")
+//           }
+//           break;
+//      case "Verde":
+//           alert("El color de la esperanza")
+//           break;
+//      case "Azul":
+//           alert("El color del agua")
+//           break;
+//      case "Amarillo":
+//           alert("El color del sol")
+//           break;
+//      case "Rojo":
+//           alert("El color del fuego y de la sangre")
+//           break;
+//      case "Marron":
+//           alert("El color de la tierra")
+//           break;
+//      default:
+//           alert("Excelente elección no lo teníamos pensado")
+//           break;
+// }
+
+//Ejercicio N°12
+// ----------------------------------------------------------------------------
+
+// let numX = prompt("Ingrese un número X")
+// let numY = prompt("Ingrese un número Y")
+// let operador = prompt("Ingrese la operacion ( + - / x )")
+
+// switch (operador) {
+//      case "+":
+//           let suma = (parseInt(numX) + parseInt(numY))
+//           alert(`${numX} + ${numY} = ${suma}`)
+//           break
+//      case "-":
+//           let resta = (parseInt(numX) - parseInt(numY))
+//           alert(`${numX} - ${numY} = ${resta}`)
+//           break
+//      case "/":
+//           let division = (parseInt(numX) / parseInt(numY))
+//           if(division == Infinity){
+//                alert("No se puede dividir por 0")
+//           }else{
+//                alert(`${numX} / ${numY} = ${division}`)
+//           }
+//           break
+//      case "x":
+//           let multiplicacion = (parseInt(numX) * parseInt(numY))
+//           alert(`${numX} x ${numY} = ${multiplicacion}`)
+//           break
+// }
+
+//Ejercicio N°13
+// ----------------------------------------------------------------------------
