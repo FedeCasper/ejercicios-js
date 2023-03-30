@@ -82,3 +82,19 @@ console.log("Bucles");
 // }
 // alert("Es número primo")
 
+//Ejercicio N° 5
+// ----------------------------------------------------------------------------
+
+// let num = prompt("Ingrese un número para saber sus divisores")
+// let aux = [] 
+
+// for(let i = 1 ; i < num ; i ++){
+// if(num%i == 0){
+//      aux.push(i)
+//      }
+// }
+// console.log(aux);
+
+//Ejercicio N° 6
+// ----------------------------------------------------------------------------
+
