@@ -211,12 +211,12 @@ console.log("Bucles");
 // console.log(menor);
 
 // Solución 2
-let array = [20, 10, 155, 98, 32, 25, 45, 13, 90, 22]
-let menor = Infinity
+// let array = [20, 23, 12, 98, 32, 25, 45, 13, 90, 1]
+// let menor = array[0]
 
-for(let i = 0 ; i < 10 ; i++){
-     if(array[i] < array[i+1] && menor > array[i]){
-          menor = array[i]
-     }
-}
-console.log(menor);
+// for(let i = 0 ; i < array.length ; i++){
+//      if(array[i] < menor){
+//           menor = array [i]
+//      }
+// }
+// console.log(menor);
