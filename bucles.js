@@ -98,3 +98,55 @@ console.log("Bucles");
 //Ejercicio N° 6
 // ----------------------------------------------------------------------------
 
+// let array = ["Squall", "Cluod", "Zidane", "Sephiroth", "Irvine", "Zell", "Rinoa", "Tifa", "Aerith"] 
+
+// for(personaje of array){
+//      console.log(personaje);
+// }
+
+//Ejercicio N° 7
+// ----------------------------------------------------------------------------
+
+// let array = [40,14,22,39,46,53,64,70,82,91]
+
+// for(numero of array){
+//      console.log(numero * 2);
+// }
+
+//Ejercicio N° 8
+// ----------------------------------------------------------------------------
+
+// let arrayFamilia = [
+//      {
+//      nombre: "Luis",
+//      apellido: "Rouyere",
+//      rol: "papa",
+//      },
+//      {
+//      nombre: "Stella",
+//      apellido: "Laviano",
+//      rol: "mama",
+//      },
+//      {
+//      nombre: "Diego",
+//      apellido: "Rouyere",
+//      rol: "primer hijo",
+//      },
+//      {
+//      nombre: "Soledad",
+//      apellido: "Rouyere",
+//      rol: "segundo hijo",
+//      },
+//      {
+//      nombre: "Federico",
+//      apellido: "Rouyere",
+//      rol: "tercer hijo",
+//      },
+// ]
+
+// for(integrante of arrayFamilia){
+//      console.log(`Soy ${integrante.nombre} ${integrante.apellido} soy ${integrante.rol} de la familia`);
+// }
+
+//Ejercicio N° 9
+// ----------------------------------------------------------------------------
