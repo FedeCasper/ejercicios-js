@@ -150,3 +150,73 @@ console.log("Bucles");
 
 //Ejercicio N° 9
 // ----------------------------------------------------------------------------
+
+// let array = [7, 2, 16, 23, 65, 48, 12, 35]
+// let aux = []
+
+// for (numero of array) {
+//      if (numero % 2 != 0) {
+//           aux.push(numero)
+//      }
+// }
+// console.log(aux);
+
+//Ejercicio N° 10
+// ----------------------------------------------------------------------------
+
+// let num = prompt("Ingrese un número (se corta en 0)")
+// let pares = 0
+// let impares = 0
+
+// while(num != 0){
+//      if(num%2 == 0){
+//           console.log("Es par");
+//           pares = (pares + parseInt(num))
+//           console.log(`${pares} total pares`);
+//           num = prompt("Ingrese un número")
+//      }else{
+//           console.log("Es impar");
+//           impares = (impares + parseInt(num))
+//           console.log(`${impares} total impares`);
+//           num = prompt("Ingrese un número")
+//      }
+     
+// }
+
+//Ejercicio N° 11
+// ----------------------------------------------------------------------------
+
+// let array = [20, 10, 155, 98, 32, 25, 45, 13, 90, 22]
+// let numeroMasGrande = 0
+
+// for(let i = 0 ; i < 10 ; i++){
+//      if(array[i] > array[i+1] && numeroMasGrande < array[i]){
+//           numeroMasGrande = array[i]
+//      }
+// }
+// console.log(numeroMasGrande);
+
+//Ejercicio N° 12
+// ----------------------------------------------------------------------------
+
+// Solución 1
+// let array = [20, 10, 155, 98, 32, 25, 45, 13, 90, 22]
+// let menor = Infinity
+
+// for(let i = 0 ; i < 10 ; i++){
+//      if(array[i] < array[i+1] && menor > array[i]){
+//           menor = array[i]
+//      }
+// }
+// console.log(menor);
+
+// Solución 2
+let array = [20, 10, 155, 98, 32, 25, 45, 13, 90, 22]
+let menor = Infinity
+
+for(let i = 0 ; i < 10 ; i++){
+     if(array[i] < array[i+1] && menor > array[i]){
+          menor = array[i]
+     }
+}
+console.log(menor);
