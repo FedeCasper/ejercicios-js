@@ -267,7 +267,7 @@ console.log("Bucles");
 //      console.log(asterisco);
 // }while(asterisco !== "***")
 
-//Ejercicio N° 14
+//Ejercicio N° 15
 // ----------------------------------------------------------------------------
 // let asteriscos = "****"
 // let triangulo = "" 
@@ -277,5 +277,22 @@ console.log("Bucles");
 //      console.log(triangulo);
 // }
 
-//Ejercicio N° 14
+//Ejercicio N° 16
 // ----------------------------------------------------------------------------
+
+let array = new Array(10).fill("").map(e => Math.round(Math.random()*1000))
+console.log(array);
+let arrayAux = []
+
+for(let i = 0 ;  i < array.length ; i++){
+     if(array[i] < array[i+1]){
+          arrayAux.push(array[i])
+     }else{
+          arrayAux.unshift(array[i])
+     }
+     for(let i = 0 ;  i < arrayAux.length ; i++){
+
+
+     }
+}
+console.log(arrayAux);
