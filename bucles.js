@@ -202,13 +202,23 @@ console.log("Bucles");
 // Solución 1
 // let array = [20, 10, 155, 98, 32, 25, 45, 13, 90, 22]
 // let menor = Infinity
+// console.time()
+// const nuevoArray = new Array(500000).fill("").map(elemento => Math.round(Math.random() * 10000) )
+// console.timeEnd()
+// console.log(nuevoArray);
 
-// for(let i = 0 ; i < 10 ; i++){
-//      if(array[i] < array[i+1] && menor > array[i]){
-//           menor = array[i]
+// console.time()
+// console.log(Math.min(...array));
+// console.timeEnd()
+
+// console.time()
+// for(let i = 0 ; i < nuevoArray.length ; i++){
+//      if(nuevoArray[i] < nuevoArray[i+1] && menor > nuevoArray[i]){
+//           menor = nuevoArray[i]
 //      }
 // }
 // console.log(menor);
+// console.timeEnd()
 
 // Solución 2
 // let array = [20, 23, 12, 98, 32, 25, 45, 13, 90, 1]
@@ -220,3 +230,52 @@ console.log("Bucles");
 //      }
 // }
 // console.log(menor);
+
+//Ejercicio N° 13
+// ----------------------------------------------------------------------------
+
+// let personaA = prompt("Persona A: Ingrese su nombre") 
+// let personaB = prompt("Persona B: Ingrese su nombre") 
+
+// let eleccion1 = prompt(`${personaA} Escoja (piedra/papel/tijera)`)
+// let eleccion2 = prompt(`${personaB} Escoja (piedra/papel/tijera)`)
+
+// do{
+//      if((eleccion1 == "piedra" && eleccion2 == "tijera") || 
+//      (eleccion1 == "tijera" && eleccion2 == "papel") || 
+//      (eleccion1 == "papel" && eleccion2 == "piedra")){
+//           alert(`${personaA} gana!!! ${eleccion1} le gana a ${eleccion2}`)
+//           break
+//      }else if(
+//           (eleccion2 == "piedra" && eleccion1 == "tijera") || 
+//           (eleccion2 == "tijera" && eleccion1 == "papel") || 
+//           (eleccion2 == "papel" && eleccion1 == "piedra")){
+//           alert(`${personaB} gana!!! ${eleccion1} le gana a ${eleccion2}`)
+//           break
+//      }else if(eleccion1 == eleccion2){
+//           eleccion1 = prompt(`${personaA} Escoja (piedra/papel/tijera)`)
+//           eleccion2 = prompt(`${personaB} Escoja (piedra/papel/tijera)`)
+//      }
+// }while(eleccion1 !== eleccion2)
+
+//Ejercicio N° 14
+// ----------------------------------------------------------------------------
+// let asterisco = ""
+
+// do{
+//      asterisco += "*"
+//      console.log(asterisco);
+// }while(asterisco !== "***")
+
+//Ejercicio N° 14
+// ----------------------------------------------------------------------------
+// let asteriscos = "****"
+// let triangulo = "" 
+
+// for(let i = 1 ; i < 4 ; i++){
+//      triangulo = asteriscos.slice(i)
+//      console.log(triangulo);
+// }
+
+//Ejercicio N° 14
+// ----------------------------------------------------------------------------
