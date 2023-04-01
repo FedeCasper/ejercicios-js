@@ -36,3 +36,34 @@ console.log("Funciones");
 
 //Ejercicio N° 4
 // ----------------------------------------------------------------------------
+
+// Solución 1
+// let resultado = 0
+// function resta (){
+//      resultado = arguments[0]
+//      for(let i = 1 ; i < arguments.length ; i++){
+//           resultado -= arguments[i]
+//           console.log(arguments[i]);
+//      }
+//      console.log(resultado);
+// }
+// resta(1120,3,4,55,48,6)
+
+// Solución 2
+// let resultado = 0
+// let numeroRandom = Math.round(Math.random()*100)
+// console.log(numeroRandom);
+// let parametos = new Array(numeroRandom).fill("").map(e => Math.round(Math.random()*100))
+// console.log(parametos);
+
+// function resta (){
+//      resultado = arguments[0]
+//      for(let i = 1 ; i < arguments.length ; i++){
+//           resultado -= arguments[i]
+//           console.log(arguments[i]);
+//      }
+//      console.log(resultado);
+// }
+// resta(...parametos)
+
+
