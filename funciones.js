@@ -66,4 +66,17 @@ console.log("Funciones");
 // }
 // resta(...parametos)
 
+//Ejercicio N° 5
+// ----------------------------------------------------------------------------
 
+// const area = function areaTriangulo (base, altura){
+//      let area = (base*altura)/2
+//      return area 
+// }
+// console.log(area(5,3) + " cm2"); 
+
+// const perimetro = function perimetroTriangulo (ladoA, ladoB, ladoC){
+//      let perimetro = ladoA + ladoB + ladoC
+//      return perimetro
+// }
+// console.log(perimetro(4,5,6) + " cm");
