@@ -82,6 +82,16 @@ console.log("Bucles");
 // }
 // alert("Es número primo")
 
+//Solución 3
+// let intentoEj4 = Number(prompt("Ingrese nro"))
+// let max = 0
+// while(max <= 100){
+//      max++
+//      if((intentoEj4 % max) === 0){
+//           console.log(max);
+//      }
+// }
+
 //Ejercicio N° 5
 // ----------------------------------------------------------------------------
 
@@ -296,3 +306,20 @@ for(let i = 0 ;  i < array.length ; i++){
      }
 }
 console.log(arrayAux);
+
+
+// const numeros = [ 10 , 2, 50, 3, 4, 23, 66, 18, 15, 1, 80]
+
+// for (let i = 0; i < numeros.length; i++) {
+
+//     for (let j = i; j < numeros.length ; j++) {
+//         const primero = numeros[ j ]
+//         const segundo = numeros[ j + 1]
+//         console.log( primero, segundo )
+//         if( primero > segundo ){
+//             numeros[j] = segundo
+//             numeros[j + 1] = primero
+//         }
+//     }
+// }
+// console.log(numeros)
