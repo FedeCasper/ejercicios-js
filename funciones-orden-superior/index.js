@@ -69,7 +69,15 @@ function encontrarCervezaPorAmargor(array, valor){
 let cervezaDeseada = encontrarCervezaPorAmargor(beers, 7)
 console.log(cervezaDeseada);
 
-/* (3) - Generar una función que reciba como parámetro el array de cervezas
+
+/* (7) - Generar una función que reciba como parámetro un array de cervezas, un
+valor y que devuelva el primer objeto que su propiedad ibu sea igual al valor
+ingresado, en caso de que no exista ninguna cerveza con ese ibu que muestre
+por consola un mensaje que diga “No existe cerveza con un ibu de (valor ingresado)”. */
+
+
+
+/* (9) - Generar una función que reciba como parámetro el array de cervezas
 y un valor de alcohol. La función debe devolver un nuevo array con las cervezas
 que no excedan el nivel etílico. Cada elemento del nuevo array debe ser un objeto
 que tenga la propiedades nombre, alcohol (abv) y "amargor" (ibu)
