@@ -24,7 +24,7 @@ fetch("https://mindhub-xj03.onrender.com/api/amazing")
      console.log("Array Arrays Futuro", arrayDeArraysFuturos);
      console.log("Array Arrays Pasado", arrayDeArraysPasados);
 
-     // SOLUCION 1 - Función crea objeto con revenues percentage por categorías ---------------------------------------------------------------
+     // SOLUCION 1 - Función FOR OF + REDUCE ---------------------------------------------------------------
      /*function calcularRevPerc(arrayArrays){
           let reduceResult;
           let arrayAux = []
@@ -52,7 +52,7 @@ fetch("https://mindhub-xj03.onrender.com/api/amazing")
      let reduce = calcularRevPerc(arrayDeArrays)
      console.log("ARRAY OBJETOS CON DATOS FINALES", reduce);*/
 
-     // SOLUCION 2 - Función crea objeto con revenues percentage por categorías ---------------------------------------------------------------
+     // SOLUCION 2 - Función MAP + REDUCE  ---------------------------------------------------------------
      function calcularDatosFinales(arrayArrays){
           let x = arrayArrays.map( array => array.reduce( (acc, elementoActual) => { 
                acc.cat = elementoActual.category
