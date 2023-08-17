@@ -6,21 +6,23 @@ fetch("https://mindhub-xj03.onrender.com/api/amazing")
 
      let eventos = data.events // array original
      console.log("ARRAY ORIGINAL", eventos);
-     const arrayFuturos = eventos.filter(evento => evento.assistance) // array futuro
+     const arrayFuturos = eventos.filter(evento => evento.estimate) // array futuro
      console.log("FUTUROS", arrayFuturos);
-     const arrayPasados = eventos.filter(evento => evento.estimate) // array pasado
+     const arrayPasados = eventos.filter(evento => evento.assistance) // array pasado
      console.log("PASADOS", arrayPasados);
      const catSinRep = Array.from(new Set(eventos.map(evento => evento.category))) // array categorias sin repetir
      console.log("CAT SIN REPETIR", catSinRep);
 
      // Función crea array con arrays de categorías ---------------------------------------------------------------
      function crearArrayArraysCategorias(array){
-          let arraysCategories = catSinRep.map(categoria =>  array.filter(evento => evento.category == categoria) )
+          let arraysCategories = catSinRep.map( categoria =>  array.filter(evento => evento.category == categoria) ).filter(elemento => elemento.length != 0)
           // console.log(arraysCategories);
           return arraysCategories
      }
-     const arrayDeArrays = crearArrayArraysCategorias(arrayFuturos)
-     // console.log(arrayDeArrays);
+     const arrayDeArraysFuturos = crearArrayArraysCategorias(arrayFuturos)
+     const arrayDeArraysPasados = crearArrayArraysCategorias(arrayPasados)
+     console.log("Array Arrays Futuro", arrayDeArraysFuturos);
+     console.log("Array Arrays Pasado", arrayDeArraysPasados);
 
      // SOLUCION 1 - Función crea objeto con revenues percentage por categorías ---------------------------------------------------------------
      /*function calcularRevPerc(arrayArrays){
@@ -52,21 +54,19 @@ fetch("https://mindhub-xj03.onrender.com/api/amazing")
 
      // SOLUCION 2 - Función crea objeto con revenues percentage por categorías ---------------------------------------------------------------
      function calcularDatosFinales(arrayArrays){
-          let revenues = 0;
-          let percentage = 0;
-          let x = arrayArrays.map( array => array.reduce( (acc, elementoActual) => {
-               revenues += (elementoActual.assistance ? elementoActual.price * elementoActual.assistance : elementoActual.price * elementoActual.estimate) 
-               percentage += ( elementoActual.assistance ? ( (elementoActual.assistance * 100) / elementoActual.capacity) : ( (elementoActual.estimate * 100) / elemAc.capacity))
-               acc = {
-                    cat: elementoActual.category,
-                    rev: revenues,
-                    per: percentage
-               }
+          let x = arrayArrays.map( array => array.reduce( (acc, elementoActual) => { 
+               acc.cat = elementoActual.category
+               acc.rev += (elementoActual.assistance ? 
+                    elementoActual.price * elementoActual.assistance :
+                    elementoActual.price * elementoActual.estimate) 
+               acc.per += (elementoActual.assistance ?
+                    ((elementoActual.assistance * 100) / elementoActual.capacity) / array.length :
+                    ((elementoActual.estimate * 100) / elementoActual.capacity)) / array.length
                return acc
-               } , 0 ) 
+               } , {cat: "", rev: 0, per: 0} ) 
           )
           console.log(x);
      }
-     calcularDatosFinales(arrayDeArrays)
+     calcularDatosFinales(arrayDeArraysFuturos)
 
 })
