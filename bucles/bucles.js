@@ -8,13 +8,14 @@ console.log("Bucles");
 //      console.log(`${i} x ${num} = ${i*num}`);
 // }
 
+
 //Ejercicio N°2
 // ----------------------------------------------------------------------------
 // let num = ""
 // let total = 0
 
+// Solución con Do While
 // do{
-     
 //      num = prompt( "Ingrese para sumar (interrumpa con vacio)" )
 //      if(num !== ""){
 //           console.log(total = parseInt(total) + parseInt(num)) 
@@ -26,9 +27,31 @@ console.log("Bucles");
 //           console.log("Fin") 
 //      }
 // }while(num != "")
-
 // console.log(total);
 // console.log("se cortó");
+
+
+// Solución con While
+// let numero = parseInt(prompt("Ingrese un número"))
+// let acc = 0
+
+// while(numero != 0){
+//      acc = acc + numero  
+//      numero = parseInt(prompt("Ingrese otro número"))
+// }
+// console.log(acc);
+
+
+// Solución con Do While
+// let numero2 = parseInt(prompt("Ingrese un número"))
+// let acc2 = 0
+
+// do{
+//      acc2 = acc2 + numero2  
+//      numero2 = parseInt(prompt("Ingrese otro número"))
+// }while(numero2 != 0)
+// console.log(acc2);
+
 
 //Ejercicio N° 3
 // ----------------------------------------------------------------------------
@@ -44,6 +67,24 @@ console.log("Bucles");
                
 //      }
 // alert("adivinaste ✅")
+
+// Segunda forma de solucionarlo
+// let resultadoEj3 = 45
+// let numero = prompt("Ingrese un número")
+// let intentos = 0
+
+// while(numero != resultadoEj3){
+//      if(numero < resultadoEj3){
+//           console.log("El numero ingresado es menor que el secreto");
+//           numero = prompt("Ingrese un nuevo numero")
+//      }else if(numero > resultadoEj3){
+//           console.log("El numero ingresado es mayor que el secreto");
+//           numero = prompt("Ingrese un nuevo numero")
+//      }
+//      intentos++
+// }
+// intentos++
+// console.log( `Acertaste! el número secreto era: ${resultadoEj3}, realizaste ${intentos} intentos` );
 
 //Ejercicio N° 4
 // ----------------------------------------------------------------------------
@@ -104,6 +145,18 @@ console.log("Bucles");
 //      }
 // }
 // console.log(aux);
+
+// let num = parseInt(prompt("Ingrese un número para saber sus divisores"))
+// let divisor = num 
+// let resto = 0
+// do{
+//      resto = num%divisor
+//      if(resto == 0){
+//           console.log(divisor);
+//      }
+//      divisor--
+// }while(divisor != 0)
+
 
 //Ejercicio N° 6
 // ----------------------------------------------------------------------------
@@ -290,22 +343,22 @@ console.log("Bucles");
 //Ejercicio N° 16
 // ----------------------------------------------------------------------------
 
-let array = new Array(10).fill("").map(e => Math.round(Math.random()*1000))
-console.log(array);
-let arrayAux = []
+// let array = new Array(10).fill("").map(e => Math.round(Math.random()*1000))
+// console.log(array);
+// let arrayAux = []
 
-for(let i = 0 ;  i < array.length ; i++){
-     if(array[i] < array[i+1]){
-          arrayAux.push(array[i])
-     }else{
-          arrayAux.unshift(array[i])
-     }
-     for(let i = 0 ;  i < arrayAux.length ; i++){
+// for(let i = 0 ;  i < array.length ; i++){
+//      if(array[i] < array[i+1]){
+//           arrayAux.push(array[i])
+//      }else{
+//           arrayAux.unshift(array[i])
+//      }
+//      for(let i = 0 ;  i < arrayAux.length ; i++){
 
 
-     }
-}
-console.log(arrayAux);
+//      }
+// }
+// console.log(arrayAux);
 
 
 // const numeros = [ 10 , 2, 50, 3, 4, 23, 66, 18, 15, 1, 80]
@@ -323,3 +376,13 @@ console.log(arrayAux);
 //     }
 // }
 // console.log(numeros)
+
+//Ejercicio N° 1 (Nuevo)
+// Utilizando un bucle for, realizar un programa que reciba un número entero
+// entre 1 y 100, luego que imprima todos los números que se encuentran entre
+// el número ingresado y el 0.
+// ----------------------------------------------------------------------------
+
+// for( let i = 5 ; i > 0 ; i--){
+//      console.log(i);
+// }
