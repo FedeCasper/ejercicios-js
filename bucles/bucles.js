@@ -214,15 +214,32 @@ console.log("Bucles");
 //Ejercicio N° 9
 // ----------------------------------------------------------------------------
 
-// let array = [7, 2, 16, 23, 65, 48, 12, 35]
-// let aux = []
+// let pares = 0
+// let impares = 0
 
-// for (numero of array) {
-//      if (numero % 2 != 0) {
-//           aux.push(numero)
+// let numero = parseInt(prompt("Ingrese un número"))
+// while(numero != 0){
+//      if(numero % 2 != 0){
+//           impares += numero
+//           numero = parseInt(prompt("Ingrese un número"))
+//      }else{
+//           pares += numero
+//           numero = parseInt(prompt("Ingrese un número"))
 //      }
 // }
-// console.log(aux);
+// console.log("Pares: ", pares);
+// console.log("Impares: ", impares);
+
+// let array = [1,2,3,4,5,6,7,8]
+// for (let numero of array) {
+//      if (numero % 2 != 0) {
+//           impares += numero
+//      }else{
+//           pares += numero
+//      }
+// }
+// console.log("Pares: ", pares);
+// console.log("Impares: ", impares);
 
 //Ejercicio N° 10
 // ----------------------------------------------------------------------------
@@ -385,4 +402,23 @@ console.log("Bucles");
 
 // for( let i = 5 ; i > 0 ; i--){
 //      console.log(i);
+// }
+
+//Ejercicio N° 10 (Nuevo)
+// Utilizando un bucle for in, crear un objeto con al menos 5 propiedades,
+// realizar un programa que recorra dicho objeto y solo muestre todas las
+// keys de sus propiedades. 
+// ----------------------------------------------------------------------------
+
+// let persona = {
+//      nombre: "Juan",
+//      apellido: "Perez",
+//      esColombiano: true,
+//      edad: 28,
+//      estudios: ["primario", "secundario", "universitario"]
+// }
+
+// for(let keys in persona){
+//      // console.log(keys);
+//      console.log(persona[keys]);
 // }
