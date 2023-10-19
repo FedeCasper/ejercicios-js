@@ -12,7 +12,7 @@ function crearDiv (e, refHTMLwall, refHTMLinputText, refHTMLinputColor ){
 
           let span = document.createElement('span')
           span.textContent = "X"
-          span.classList.add('font-extrabold', 'absolute', 'top-4', 'right-5')
+          span.classList.add('transition:all', 'ease-in-out', 'duration-300', 'font-extrabold', 'absolute', 'top-4', 'right-5', 'cursor-pointer', 'not-italic', 'hover:text-red-500', 'hover:scale-150')
 
           span.addEventListener('click', () => refHTMLwall.removeChild(div) )
 
